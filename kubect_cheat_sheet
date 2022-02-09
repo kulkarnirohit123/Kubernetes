@@ -1,0 +1,4 @@
+kubectl get pods 
+kubectl run nginx --image=nginx.   ##create Nginx pod 
+kubectl describe pods <POD_NAME>   ##describe pod such as image name , replica set , lable etc 
+kubectl run redis --image=redis123 --dry-run=client -o yaml ##create YAML template 
