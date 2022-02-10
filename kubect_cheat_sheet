@@ -2,3 +2,8 @@ kubectl get pods
 kubectl run nginx --image=nginx.   ##create Nginx pod 
 kubectl describe pods <POD_NAME>   ##describe pod such as image name , replica set , lable etc 
 kubectl run redis --image=redis123 --dry-run=client -o yaml ##create YAML template 
+kubectl scale rs new-replica-set --replicas=2    ##This will scale pod replica to 2 
+kubectl get replicaset  ##Give replicaset count 
+kubectl get deployment. ##Give number of deployments
+kubectl taint node node01 app=frontend-js:NoSchedule #this will not schedule any frontend-js pon on node 01 
+tolerations is always set on PODS in pod defination files 
